@@ -22,4 +22,6 @@ public class admin {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	
 }
