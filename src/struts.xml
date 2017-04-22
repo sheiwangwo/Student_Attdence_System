@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+   
+    <constant name="struts.multipart.maxSize" value="999999999"/>
+    <package name="default" namespace="/" extends="struts-default">
+    <action name="Regist" class="action.Regsit">
+     <result name="success">success.jsp</result>
+     <result name="fail">error.jsp</result>
+     </action>
+     <action name="Login" class="action.Login">
+     <result name="success">main.jsp</result>
+     <result name="fail">login.jsp</result>
+    </action>
+
+	<action name="Alogin" class="action.Alogin">
+     <result name="success">code.jsp</result>
+     <result name="fail">Alogin.jsp</result>
+    </action>
+     <action name="Code" class="action.Code">
+     <result name="success">code.jsp</result>
+     <result name="fail">code.jsp</result>
+    </action>
+       
+    <action name="Sign" class="action.Sign">
+     <result name="success">main.jsp</result>
+     <result name="fail">main.jsp</result>
+    </action>
+       
+     <action name="Updata" class="action.Updata">
+     <result name="success">code.jsp</result>
+     <result name="fail">updata.jsp</result>
+    </action>  
+    
+    <action name="ViewAttdence" class="action.ViewAttdence">
+     <result name="sumforms">SumForms.jsp</result>
+     <result name="singleforms">SingleForms.jsp</result>
+     <result name="fail">MyJsp.jsp</result>
+    </action>  
+             
+    </package>
+
+    
+
+    
+
+</struts>
